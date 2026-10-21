@@ -1,0 +1,343 @@
+/*=================== contact banner start ====================*/
+
+.dropdown .dropdown-menu {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contact-info{
+  margin-bottom: 25px;
+
+  &__icon{
+    margin-right: 20px;
+
+    i,span{
+      color: #8f9195;
+      font-size: 27px;
+    }
+  }
+
+  .media-body{
+
+    h3{
+      font-size: 16px;
+      margin-bottom: 0;
+      font-size: 16px;
+      color: #2a2a2a;
+      a{
+        &:hover{
+          color: $theme-color2;
+        }
+      }
+    }
+
+    p{
+      color: #8a8a8a;
+    }
+  }
+}
+/*=================== contact banner end ====================*/
+
+
+/*=================== contact form start ====================*/
+.contact-title{
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form-contact{
+
+  label{
+    font-size: 14px;
+  }
+
+  .form-group{
+    margin-bottom: 30px;
+  }
+
+  .form-control{
+    border: 1px solid #e5e6e9;
+    border-radius: 0px;
+    height: 48px;
+    padding-left: 18px;
+    font-size: 13px;
+    background: transparent;
+
+    &:focus{
+      outline: 0;
+      box-shadow: none;
+    }
+
+    &::placeholder{
+      font-weight: 300;
+      color: #999999;
+    }
+  }
+
+  textarea{
+    border-radius: 0px;
+    height: 100% !important;
+  }
+
+  // button{
+  //   border: 0;
+  // }
+}
+
+/*=================== contact form end ====================*/
+
+/* Contact Success and error Area css
+============================================================================================ */
+
+
+.modal-message {
+    .modal-dialog {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) !important;
+        margin: 0px;
+        max-width: 500px;
+        width: 100%;
+        .modal-content {
+            .modal-header {
+                text-align: center;
+                display: block;
+                border-bottom: none;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                .close {
+                    position: absolute;
+                    right: -15px;
+                    top: -15px;
+                    padding: 0px;
+                    color: #fff;
+                    opacity: 1;
+                    cursor: pointer;
+                }
+                h2 {
+                    display: block;
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
+                p {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.contact-section{
+  padding: 130px 0 100px;
+  @media #{$tab}{
+    padding: 70px 0 40px;
+  }
+  @media #{$medium_device}{
+    padding: 80px 0 50px;
+  }
+  .btn_2{
+    background-color:#191d34;
+    padding: 18px 60px;
+    border-radius: 50px;
+    margin-top: 0;
+    &:hover{
+      background-color: $theme-color2;
+      
+    }
+  }
+}
+
+.brabus-map {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  background: #e8e6df;
+  isolation: isolate;
+}
+
+.map-grid {
+  position: absolute;
+  inset: -20%;
+  opacity: .52;
+  background-image:
+    linear-gradient(28deg, transparent 46%, #d2d0c7 47%, #d2d0c7 48%, transparent 49%),
+    linear-gradient(112deg, transparent 46%, #d2d0c7 47%, #d2d0c7 48%, transparent 49%);
+  background-size: 118px 105px;
+  transform: rotate(-8deg);
+}
+
+.map-river {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  path {
+    fill: none;
+    stroke: #a7d4d6;
+    stroke-width: 24;
+  }
+}
+
+.map-road {
+  position: absolute;
+  z-index: -1;
+  height: 10px;
+  border: 3px solid #f8f6ef;
+  border-right: 0;
+  border-left: 0;
+  background: #d8cfc0;
+}
+
+.map-road-one {
+  top: 57%;
+  left: -5%;
+  width: 110%;
+  transform: rotate(-15deg);
+}
+
+.map-road-two {
+  top: 34%;
+  left: 25%;
+  width: 83%;
+  transform: rotate(38deg);
+}
+
+.map-road-three {
+  top: 76%;
+  left: -8%;
+  width: 80%;
+  transform: rotate(24deg);
+}
+
+.map-place {
+  position: absolute;
+  color: #8b8981;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.map-place-center {
+  top: 43%;
+  left: 43%;
+}
+
+.map-place-north {
+  top: 18%;
+  left: 15%;
+}
+
+.map-place-south {
+  right: 13%;
+  bottom: 17%;
+}
+
+.map-place-east {
+  top: 67%;
+  left: 19%;
+}
+
+.map-pin {
+  position: absolute;
+  top: 41%;
+  left: 55%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.map-pin-dot {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 4px solid #fff;
+  border-radius: 50% 50% 50% 0;
+  background: #ff5e13;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, .2);
+  color: #fff;
+  font-size: 20px;
+  transform: rotate(-45deg);
+
+  i {
+    transform: rotate(45deg);
+  }
+}
+
+.map-pin-label {
+  padding: 10px 14px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .12);
+  color: #191d34;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  small {
+    display: block;
+    margin-top: 3px;
+    color: #8b8981;
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+}
+
+.map-caption {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  color: #68675f;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.contact-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-form-status {
+  margin: 0 0 20px;
+  padding: 14px 18px;
+  border-left: 4px solid;
+  font-size: 14px;
+
+  &.is-success {
+    border-color: #2e8b57;
+    background: #edf8f1;
+    color: #205c39;
+  }
+
+  &.is-error {
+    border-color: #c43d3d;
+    background: #fff0f0;
+    color: #8c2424;
+  }
+}
+
+#contactSubmit:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
+@media (max-width: 767px) {
+  .brabus-map {
+    height: 320px;
+  }
+
+  .map-pin {
+    left: 43%;
+  }
+
+  .map-place-center {
+    left: 25%;
+  }
+}

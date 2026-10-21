@@ -1,0 +1,373 @@
+body.account-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  color: #1b1b1b;
+}
+
+.account-shell {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(480px, 1.1fr);
+  min-height: 100vh;
+}
+
+.account-visual {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 42px 54px;
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.25), rgba(8, 8, 8, 0.88)),
+    url("../img/banner/bradcam_3.png") center / cover no-repeat;
+  color: #fff;
+}
+
+.account-brand,
+.mobile-brand {
+  color: #fff;
+  font-family: "Teko", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.account-brand:hover,
+.mobile-brand:hover {
+  color: #fff;
+}
+
+.account-brand span,
+.mobile-brand span {
+  color: #ff2424;
+}
+
+.visual-copy {
+  max-width: 440px;
+  margin: auto 0;
+  padding: 70px 0;
+}
+
+.visual-copy .eyebrow,
+.account-card .eyebrow {
+  margin-bottom: 16px;
+  color: #ff2424;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.visual-copy h1 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Teko", sans-serif;
+  font-size: clamp(56px, 6vw, 88px);
+  font-weight: 600;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.visual-copy > p:last-child {
+  max-width: 350px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.visual-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.visual-footer a {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+.visual-footer a i {
+  margin-right: 7px;
+  color: #ff2424;
+}
+
+.account-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 32px;
+}
+
+.account-card {
+  width: 100%;
+  max-width: 440px;
+}
+
+.mobile-brand {
+  display: none;
+  margin-bottom: 42px;
+  color: #1b1b1b;
+}
+
+.account-card h2 {
+  margin: 0 0 8px;
+  color: #1b1b1b;
+  font-family: "Teko", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.account-intro {
+  margin-bottom: 28px;
+  color: #777;
+  font-size: 14px;
+}
+
+.account-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #dedede;
+}
+
+.account-tab {
+  position: relative;
+  padding: 13px 8px;
+  border: 0;
+  background: transparent;
+  color: #888;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.account-tab::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background: transparent;
+  content: "";
+}
+
+.account-tab.is-active {
+  color: #1b1b1b;
+}
+
+.account-tab.is-active::after {
+  background: #ff2424;
+}
+
+.account-form[hidden] {
+  display: none;
+}
+
+.account-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #303030;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.account-form input:not([type="checkbox"]) {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  outline: 0;
+  background: #fff;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.account-form input:focus {
+  border-color: #ff2424;
+  box-shadow: 0 0 0 3px rgba(255, 36, 36, 0.08);
+}
+
+.account-form input::placeholder {
+  color: #aaa;
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-wrap > i {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  color: #999;
+  font-size: 14px;
+}
+
+.input-wrap input {
+  padding-left: 42px !important;
+}
+
+.label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label-row label {
+  margin-bottom: 8px;
+}
+
+.form-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #ec2929;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.form-link:hover {
+  color: #b91010;
+  text-decoration: underline;
+}
+
+.account-submit {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 3px;
+  background: #ff2424;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.account-submit:hover {
+  transform: translateY(-1px);
+  background: #dc1717;
+}
+
+.form-notice {
+  min-height: 18px;
+  margin: 12px 0 0;
+  color: #8e2a2a;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.switch-prompt {
+  margin: 14px 0 0;
+  color: #777;
+  font-size: 12px;
+  text-align: center;
+}
+
+.name-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.name-fields label {
+  margin-bottom: 8px;
+}
+
+.name-fields + label,
+.name-fields + label + input,
+.name-fields + label + input + label {
+  margin-top: 0;
+}
+
+.account-form > input:not([type="checkbox"]) {
+  margin-bottom: 18px;
+}
+
+.terms-check {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 0 0 16px !important;
+  color: #777 !important;
+  font-weight: 400 !important;
+  line-height: 1.6;
+}
+
+.terms-check input {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  accent-color: #ff2424;
+}
+
+.terms-check span {
+  font-size: 11px;
+}
+
+.terms-check .form-link {
+  font-size: inherit;
+}
+
+.demo-disclaimer {
+  margin: 26px 0 0;
+  color: #999;
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.demo-disclaimer i {
+  margin-right: 4px;
+  color: #ff2424;
+}
+
+@media (max-width: 767px) {
+  .account-shell {
+    display: block;
+  }
+
+  .account-visual {
+    display: none;
+  }
+
+  .account-content {
+    min-height: 100vh;
+    padding: 32px 22px;
+  }
+
+  .account-card {
+    max-width: 440px;
+  }
+
+  .mobile-brand {
+    display: inline-block;
+    font-size: 36px;
+  }
+
+  .account-card h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 380px) {
+  .name-fields {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
